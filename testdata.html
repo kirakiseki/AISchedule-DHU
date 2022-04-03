@@ -1,0 +1,173 @@
+<table border="2" width="0" align="center" style="border-collapse:collapse;margin:0 auto;" bordercolor="#000000">
+    <tbody>
+        <tr>
+            <td>节</td>
+            <td>星期一</td>
+            <td>星期二</td>
+            <td>星期三</td>
+            <td>星期四</td>
+            <td>星期五</td>
+            <td>星期六</td>
+            <td>星期日</td>
+        </tr>
+        <tr>
+            <td width="8%">一节</td>
+            <td width="11%" rowspan="2"></td>
+            <td width="11%" rowspan="2"></td>
+            <td width="11%" rowspan="2">几何与多元微积分A(上) 1-8周 李晋秀 松1121<br>几何与多元微积分A(下) 9-16周 李晋秀 松1121</td>
+            <td width="11%" rowspan="2"></td>
+            <td width="11%" rowspan="2">大学物理A(1) 1-16周 陆爱江 松1334</td>
+            <td width="11%" rowspan="2"></td>
+            <td width="11%" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td width="8%">二节</td>
+        </tr>
+        <tr>
+            <td width="8%">三节</td>
+            <td width="11%" rowspan="2">毛泽东思想和中国特色社会主义理论体系概论Ⅱ 1-16周 田锋 松2146</td>
+            <td width="11%" rowspan="2">数据结构 1-8周 谢颖华 松1334</td>
+            <td width="11%" rowspan="2">大学物理实验(1) 2-16周 李博 </td>
+            <td width="11%" rowspan="2">面向对象程序设计 9-15单周 王晓峰 图文6号机房</td>
+            <td width="11%" rowspan="2">几何与多元微积分A(上) 1-8周 李晋秀 松1121<br>几何与多元微积分A(下) 9-16周 李晋秀 松1121</td>
+            <td width="11%" rowspan="2"></td>
+            <td width="11%" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td width="8%">四节</td>
+        </tr>
+        <tr>
+            <td style="border-top:2pt solid black">五节</td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="2">几何与多元微积分A(上) 1-8周 李晋秀 松1121<br>几何与多元微积分A(下)
+                9-16周 李晋秀 松1121</td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="2"></td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="2">大学物理A(1) 1-16周 陆爱江 松1334</td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="2">数据结构 1-4,8周 谢颖华 松1146<br>数据结构 5-7周 谢颖华
+                图文6号机房<br>程序设计实践 9-16周 谢颖华 图文6号机房</td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="4">工程训练 1-16周 原一高 工程训练中心329</td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="2"></td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td width="8%">六节</td>
+        </tr>
+        <tr>
+            <td width="8%">七节</td>
+            <td width="11%" rowspan="3">线性代数A 1-16周 杜玲珑 松1321</td>
+            <td width="11%" rowspan="3"></td>
+            <td width="11%" rowspan="2">面向对象程序设计 1-16周 王晓峰 松1142</td>
+            <td width="11%" rowspan="2">程序设计实践 9-16周 谢颖华 图文6号机房</td>
+            <td width="11%" rowspan="3"></td>
+            <td width="11%" rowspan="3"></td>
+        </tr>
+        <tr>
+            <td width="8%">八节</td>
+        </tr>
+        <tr>
+            <td width="8%">九节</td>
+            <td width="8%"></td>
+            <td width="8%">羽毛球1（男） 1-16周 冯巍 松江校区体育馆</td>
+            <td width="8%"></td>
+        </tr>
+        <tr>
+            <td style="border-top:2pt solid black">十节</td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="2"></td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="4">编程艺术鉴赏 1-8周 黄永锋 综431</td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="2"></td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="2">形势与政策（2） 10-15周 郝明洋 松1137</td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="2"></td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="2"></td>
+            <td width="11%" style="border-top:2pt solid black" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td width="8%">十一节</td>
+        </tr>
+        <tr>
+            <td width="8%">十二节</td>
+            <td width="11%" rowspan="2"></td>
+            <td width="11%" rowspan="2"></td>
+            <td width="11%" rowspan="2"></td>
+            <td width="11%" rowspan="2"></td>
+            <td width="11%" rowspan="2"></td>
+            <td width="11%" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td width="8%">十三节</td>
+        </tr>
+    </tbody>
+</table>
+<script>
+    const trs = document.getElementsByTagName("table")[0].getElementsByTagName("tr");
+    let str = "";
+    for (let i = 1; i < trs.length; i++) {
+        const tr = trs[i];
+        const tds = tr.getElementsByTagName("td");
+        for (let j = 1; j < tds.length; j++) {
+            const td = tds[j];
+            if (td.innerHTML) {
+                str += (td.innerHTML + '@' + j + '@' + i + '@' + td.attributes.rowspan?.value + '|');
+            }
+        }
+
+    }
+    console.log(str);
+
+
+    let lessons = str.split('|');
+    let resArr = [];
+    for (let lesson of lessons) {
+        // console.log(lesson);
+        let week = lesson.split('@')[1];
+        let start = parseInt(lesson.split('@')[2]);
+        let last = parseInt(lesson.split('@')[3]);
+        if (!last) {
+            last = 1;
+        }
+        let aLessons = lesson.split('@')[0].split("<br>");
+        for (let aLesson of aLessons) {
+            let lessonObj = {};
+            let infos = aLesson.split(' ');
+
+            if (!infos[0]) {
+                continue;
+            }
+            lessonObj.name = infos[0];
+            lessonObj.position = infos[3];
+            lessonObj.teacher = infos[2];
+            lessonObj.day = week;
+            let sections = [];
+            for (let i = start; i <= start + last - 1; i++) {
+                sections.push(i);
+            }
+            sections.sort();
+            console.log(sections);
+            lessonObj.sections = sections;
+            let weeks = [];
+            let weekArr = infos[1].slice(0, -1).split(',');
+            // console.log(weekArr);
+            weekArr.forEach((item, index, array) => {
+                if (item.includes('-') && !(item.includes('单') || item.includes('双'))) {
+                    let start = parseInt(item.split('-')[0]);
+                    let end = parseInt(item.split('-')[1]);
+                    for (let i = start; i <= end; i++) {
+                        weeks.push(i);
+                    }
+                }
+                else if (item.includes('单') || item.includes('双')) {
+                    let start = parseInt(item.split('-')[0]);
+                    let end = parseInt(item.split('-')[1]);
+                    for (let i = start; i <= end; i += 2) {
+                        weeks.push(i);
+                    }
+                }
+                else {
+                    weeks.push(parseInt(item));
+                }
+
+            });
+            lessonObj.weeks = weeks;
+            resArr.push(lessonObj);
+        }
+    }
+    console.log(resArr);
+</script>
