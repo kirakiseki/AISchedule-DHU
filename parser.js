@@ -27,7 +27,7 @@ function scheduleHtmlParser(html) {
       lessonObj.sections = sections;
       let weeks = [];
       let weekArr = infos[1].slice(0, -1).split(',');
-      weekArr.forEach((item, index, array) => {
+      weekArr.forEach(item => {
         if (item.includes('-') && !(item.includes('单') || item.includes('双'))) {
           let start = parseInt(item.split('-')[0]);
           let end = parseInt(item.split('-')[1]);

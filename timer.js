@@ -1,14 +1,26 @@
+
 async function scheduleTimer({
   providerRes,
   parserRes
 } = {}) {
 
+  await loadTool('AIScheduleTools')
+  const userConfrim = await AIScheduleConfirm({
+    titleText: '请选择每周天数',
+    contentText: '请选择课程表以7天或5天显示', 
+    cancelText: '7天', 
+    confirmText: '5天',
+  })
+
+  await AIScheduleConfirm('导入已完成，请在设置中自行更改开学日期，出现问题请加QQ群878393456反馈。')
+
   let ts = String(+(new Date(new Date().toLocaleDateString()).getTime()));
+
   return {
     totalWeek: 18,
     startSemester: ts,
     startWithSunday: false,
-    showWeekend: true,
+    showWeekend: !userConfrim,
     forenoon: 4,
     afternoon: 5,
     night: 4,
