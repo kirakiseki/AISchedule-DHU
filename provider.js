@@ -4,7 +4,7 @@ async function scheduleHtmlProvider(dom = document) {
   // Placeholder <td></td> for empty cells
   const placeholder = document.createElement('td');
 
-  // Convert table into array and flip it
+  // Convert table into array
   let table = [...dom.getElementsByTagName("table")[0].getElementsByTagName("tr")].map(tr => [...tr.getElementsByTagName("td")]);
 
   function insertPlaceholder(row, col, span) {
